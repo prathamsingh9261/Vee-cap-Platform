@@ -47,7 +47,7 @@ export default function Footer() {
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-5 py-14 sm:grid-cols-2 md:grid-cols-4">
         <div>
-          <img src={logo} alt="VeeCap Classes" className="h-14 w-auto object-contain brightness-0 invert" />
+          <img src={logo} alt="VeeCap Classes" className="h-14 w-auto object-contain" />
           <p className="mt-3 text-sm text-ink-100/70">
             Leading skill development institute in Jodhpur. Empowering students with skills for a successful future.
           </p>
