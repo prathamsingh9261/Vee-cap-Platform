@@ -145,7 +145,7 @@ export default function About() {
           <Link to="/register" className="btn-amber">
             Get Started
           </Link>
-          <Link to="/contact" className="btn-primary">
+          <Link to="/contact" className="btn-amber">
             Contact Us
           </Link>
         </div>
