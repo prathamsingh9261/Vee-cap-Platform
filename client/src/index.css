@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  :focus-visible {
+    outline: 2px solid #e8a33d;
+    outline-offset: 2px;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Fraunces", serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-ink-600 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-amber {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-amber px-5 py-2.5 text-sm font-semibold text-ink-900 transition hover:bg-amber-600 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-ink-100 bg-white px-5 py-2.5 text-sm font-semibold text-ink transition hover:border-ink hover:bg-ink-50;
+  }
+  .input-field {
+    @apply w-full rounded-md border border-ink-100 bg-white px-3.5 py-2.5 text-sm text-ink-900 placeholder:text-ink-400/70 focus:border-ink-400 focus:outline-none;
+  }
+  .eyebrow {
+    @apply font-mono text-xs font-semibold uppercase tracking-widest text-amber-600;
+  }
+  .card-ledger {
+    @apply rounded-lg border border-ink-100 bg-ledger shadow-card transition hover:shadow-cardHover hover:-translate-y-0.5;
+  }
+}
+
+/* Page transition */
+#root {
+  animation: pageFadeIn 0.4s ease;
+}
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
